@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>
+            Hidden Gem
+        </title>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+        <script>
+                window.onload = function() {
+            var $recaptcha = document.querySelector('#g-recaptcha-response');
+
+            if($recaptcha) {
+                $recaptcha.setAttribute("required", "required");
+            }
+            };
+        </script>
+
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <h1>Sign in </h1>
+
+
+        <div id="credentials">
+            <form method="post" action='signin.php'>
+            
+            <br/>
+                <label>Username: </label>
+                <input type="text" name="username" required/>
+
+            <br/>
+            <br/>
+
+                <label>Password</label> <input type="text" name="password" required/> 
+
+                <br/>
+                <br/>
+
+                <label>Email</label> <input type="text" name="email" required/> 
+
+                <br/>
+                <br/>
+
+                <label>Phone number</label> <input type="text" name="number" d/> 
+
+                <br/>
+                <br/>
+                <form action="?" method="POST">
+                <div class="g-recaptcha" data-sitekey="6LcZWpEUAAAAABbNaUlW-OzR32M1UQbcc9rJHm-H"> 
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+                <br/>
+                <br/>
+                <br/>
+            
+
+                <input type="submit" value= "Sign in"/>
+
+
+            </form>
+        </div>
+    </body>
+</html>
